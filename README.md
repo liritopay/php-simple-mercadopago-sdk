@@ -1,1 +1,1 @@
-# php-simple-mercadopago-sdk
+# PHP Simple Mercado Pago SDK
