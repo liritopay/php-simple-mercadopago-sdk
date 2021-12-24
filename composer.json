@@ -1,0 +1,13 @@
+{
+    "name": "liritopay/php-simple-mercadopago-sdk",
+    "description": "A simple implementation of Mercado Pago API for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Lira",
+            "email": "local@fernand.us"
+        }
+    ],
+    "require": {}
+}
