@@ -1,10 +1,10 @@
 <?php
 
-namespace LiritoPay\PhpSimpleMercadoPago\Sdk;
+namespace LiritoPay\SimpleMercadoPago\Sdk;
 
 /**
  * Class Client
- * @package LiritoPay\PhpSimpleMercadoPago\Sdk
+ * @package LiritoPay\SimpleMercadoPago\Sdk
  */
 class Client
 {

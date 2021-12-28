@@ -1,13 +1,13 @@
 <?php
 
-namespace LiritoPay\PhpSimpleMercadoPago\Sdk\Collections;
+namespace LiritoPay\SimpleMercadoPago\Sdk\Collections;
 
 use Exception;
 use Traversable;
 
 /**
  * Class CollectionAbstract
- * @package LiritoPay\PhpSimpleMercadoPago\Sdk\Collections
+ * @package LiritoPay\SimpleMercadoPago\Sdk\Collections
  */
 abstract class CollectionAbstract implements \IteratorAggregate, \Countable, \JsonSerializable
 {

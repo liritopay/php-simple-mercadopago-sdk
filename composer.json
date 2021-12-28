@@ -1,16 +1,16 @@
 {
-    "name": "liritopay/php-simple-mercadopago-sdk",
+    "name": "liritopay/simple-mercadopago-sdk-php",
     "description": "A simple implementation of Mercado Pago API for PHP",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "LiritoPay\\PhpSimpleMercadoPagoSdk\\Sdk\\": "src/"
+            "LiritoPay\\SimpleMercadoPago\\Sdk\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "LiritoPay\\PhpSimpleMercadoPagoSdk\\Tests\\": "tests/"
+            "LiritoPay\\SimpleMercadoPago\\Tests\\": "tests/"
         }
     },
     "authors": [

@@ -1,6 +1,6 @@
 <?php
 
-namespace LiritoPay\PhpSimpleMercadoPago\Sdk\Traits;
+namespace LiritoPay\SimpleMercadoPago\Sdk\Traits;
 
 use Psr\Log\LoggerAwareTrait;
 use Psr\Log\LoggerInterface;
@@ -8,7 +8,7 @@ use Psr\Log\LoggerTrait as LoggerAbstract;
 
 /**
  * Trait LoggerTrait
- * @package LiritoPay\PhpSimpleMercadoPago\Sdk\Traits
+ * @package LiritoPay\SimpleMercadoPago\Sdk\Traits
  */
 trait LoggerTrait
 {

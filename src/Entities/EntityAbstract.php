@@ -1,10 +1,10 @@
 <?php
 
-namespace LiritoPay\PhpSimpleMercadoPago\Sdk\Entities;
+namespace LiritoPay\SimpleMercadoPago\Sdk\Entities;
 
 /**
  * Class EntityAbstract
- * @package LiritoPay\PhpSimpleMercadoPago\Sdk\Entities
+ * @package LiritoPay\SimpleMercadoPago\Sdk\Entities
  */
 abstract class EntityAbstract implements \JsonSerializable
 {
