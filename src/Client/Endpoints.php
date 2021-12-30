@@ -3,10 +3,10 @@
 namespace LiritoPay\SimpleMercadoPago\Sdk\Client;
 
 /**
- * Class EndPoints
+ * Class Endpoints
  * @package LiritoPay\SimpleMercadoPago\Sdk\Client
  */
-class EndPoints
+class Endpoints
 {
     const CHECKOUT_PREFERENCES = '/checkout/preferences';
 
