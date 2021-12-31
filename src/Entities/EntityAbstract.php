@@ -29,14 +29,14 @@ abstract class EntityAbstract implements \JsonSerializable
 
         $data = [];
         foreach ($properties as $property => $value) {
-            if ($value instanceof EntityAbstract) {
+            if ($value instanceof self) {
                 $data[$property] = $value->toArray();
                 continue;
             }
 
-            if ((is_array($value) && count($value)) || $value instanceof \IteratorAggregate) {
+            if (($value instanceof \IteratorAggregate) || (is_array($value) && count($value))) {
                 foreach ($value as $index => $item) {
-                    if ($item instanceof EntityAbstract) {
+                    if ($item instanceof self) {
                         $data[$property][$index] = $item->toArray();
                     } else {
                         $data[$property][$index] = $item;
