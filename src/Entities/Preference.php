@@ -2,65 +2,214 @@
 
 namespace LiritoPay\SimpleMercadoPago\Sdk\Entities;
 
+use LiritoPay\SimpleMercadoPago\Sdk\Collections\Preference\Items;
+use LiritoPay\SimpleMercadoPago\Sdk\Collections\Preference\Metadata;
+use LiritoPay\SimpleMercadoPago\Sdk\Collections\Preference\Taxes;
+use LiritoPay\SimpleMercadoPago\Sdk\Collections\Preference\Tracks;
+use LiritoPay\SimpleMercadoPago\Sdk\Entities\Preference\AutoReturn;
+use LiritoPay\SimpleMercadoPago\Sdk\Entities\Preference\BackUrls;
+use LiritoPay\SimpleMercadoPago\Sdk\Entities\Preference\DifferentialPricing;
+use LiritoPay\SimpleMercadoPago\Sdk\Entities\Preference\Payer;
+use LiritoPay\SimpleMercadoPago\Sdk\Entities\Preference\PaymentMethods;
+use LiritoPay\SimpleMercadoPago\Sdk\Entities\Preference\Shipments;
+
 class Preference extends EntityAbstract
 {
-    protected $id;
+    /**
+     * Preference ID
+     *
+     * @var string
+     */
+    protected string $id;
 
-    protected $auto_return;
+    /**
+     * Set Checkout Pro when is approved ou any situation redirect to the site
+     * @see AutoReturn class to get the prosibles values
+     * @var string
+     */
+    protected string $autoReturn;
 
-    protected $back_urls;
+    /**
+     * Set the URL to return when the payment is approved
+     *
+     * @var BackUrls
+     */
+    protected BackUrls $backUrls;
 
-    protected $notification_url;
+    /**
+     * Set the URL to return when has a payment change
+     *
+     * @var string
+     */
+    protected string $notificationUrl;
 
-    protected $init_point;
+    /**
+     * URL to redirect the user to initialize the payment process
+     *
+     * @var string
+     */
+    protected string $initPoint;
 
-    protected $sandbox_init_point;
+    /**
+     * URL to redirect the user to initialize the payment process in sandbox mode
+     *
+     * @var string
+     */
+    protected string $sandboxInitPoint;
 
-    protected $operation_type;
+    /**
+     * Operation type, the default value is "regular_payment"
+     *
+     * @var string
+     */
+    protected string $operationType;
 
-    protected $additional_info;
+    /**
+     * Additional information about the payment
+     *
+     * @var string
+     */
+    protected string $additionalInfo;
 
-    protected $external_reference;
+    /**
+     * External reference to identify the payment in your system
+     *
+     * @var string
+     */
+    protected string $externalReference;
 
-    protected $expires;
+    /**
+     * Set the expiration date is required
+     *
+     * @var bool
+     */
+    protected bool $expires;
 
-    protected $expiration_date_from;
+    /**
+     * Set the expiration date from
+     *
+     * @var string
+     */
+    protected string $expirationDateFrom;
 
-    protected $expiration_date_to;
+    /**
+     * Set the expiration date to
+     *
+     * @var string
+     */
+    protected string $expirationDateTo;
 
-    protected $date_of_expiration;
+    /**
+     * Set the expiration date of the ticket or bank transfer payment method
+     *
+     * @var string
+     */
+    protected string $dateOfExpiration;
 
-    protected $collector_id;
+    /**
+     * Set the collector ID
+     *
+     * @var string
+     */
+    protected string $collectorId;
 
-    protected $client_id;
+    /**
+     * Set the client ID
+     * @var string
+     */
+    protected string $clientId;
 
-    protected $marketplace;
+    /**
+     * Set the marketplace
+     *
+     * @var string
+     */
+    protected string $marketplace;
 
-    protected $marketplace_fee;
+    /**
+     * Set the marketplace fee
+     *
+     * @var int
+     */
+    protected int $marketplaceFee;
 
-    protected $differential_pricing;
+    /**
+     * Set the differential pricing
+     *
+     * @var DifferentialPricing
+     */
+    protected DifferentialPricing $differentialPricing;
 
-    protected $payment_methods;
+    /**
+     * Set the payment methods are available
+     *
+     * @var PaymentMethods
+     */
+    protected PaymentMethods $paymentMethods;
 
-    protected $items;
+    /**
+     * Set the items
+     *
+     * @var Items
+     */
+    protected Items $items;
 
-    protected $payer;
+    /**
+     * Set the payer
+     *
+     * @var Payer
+     */
+    protected Payer $payer;
 
-    protected $shipments;
+    /**
+     *  Set the shipments
+     *
+     * @var Shipments
+     */
+    protected Shipments $shipments;
 
-    protected $date_created;
+    /**
+     * @var string
+     */
+    protected string $dateCreated;
 
-    protected $sponsor_id;
+    /**
+     * @var string
+     */
+    protected string $sponsorId;
 
-    protected $processing_modes;
+    /**
+     * @var string
+     */
+    protected string $processingModes;
 
-    protected $binary_mode;
+    /**
+     * @var bool
+     */
+    protected bool $binaryMode;
 
-    protected $taxes;
+    /**
+     * @var Taxes
+     */
+    protected Taxes $taxes;
 
-    protected $statement_descriptor;
+    /**
+     * @var string
+     */
+    protected string $statementDescriptor;
 
-    protected $metadata;
+    /**
+     * @var Metadata
+     */
+    protected Metadata $metadata;
 
-    protected $tracks;
+    /**
+     * @var Tracks
+     */
+    protected Tracks $tracks;
+
+    /**
+     * @var string
+     */
+    protected string $purpose;
 }
